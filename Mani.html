@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>چرم مانی | Mani Leather</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Vazirmatn', sans-serif;
+      background: linear-gradient(to bottom, #000000, #1a1a1a);
+      color: #fff;
+    }
+
+    header {
+      background-color: #ffeb3b;
+      color: #000;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #222;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #ffeb3b;
+      text-decoration: none;
+      margin: 10px 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .product {
+      background-color: #333;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+
+    .product img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    .fade-in {
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    button {
+      background-color: #ffeb3b;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: none;
+      font-family: inherit;
+    }
+
+    form {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+      max-width: 500px;
+      margin: auto;
+      text-align: right;
+    }
+
+    .gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 20px;
+      justify-content: flex-start;
+    }
+
+    .gallery img {
+      border-radius: 10px;
+      height: 200px;
+      flex-shrink: 0;
+    }
+
+    .logo-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="fade-in">چرم مانی | Mani Leather</header>
+
+  <div class="logo-container">
+    <svg viewBox="0 0 300 100" width="300" height="100">
+      <path d="M10,50 Q150,0 290,50 Q150,100 10,50 Z" fill="none" stroke="gold" stroke-width="4"/>
+      <text x="150" y="45" text-anchor="middle" font-size="24" fill="#ffeb3b"
+            font-family="Vazirmatn" transform="rotate(-5 150,45)">
+        چـــرم مـــانی
+      </text>
+      <text x="150" y="75" text-anchor="middle" font-size="20" fill="#fff"
+            font-family="Playfair Display" transform="rotate(3 150,75)">
+        Mani Leather
+      </text>
+    </svg>
+  </div>
+
+  <nav>
+    <a href="#home">خانه</a>
+    <a href="#products">محصولات</a>
+    <a href="#about">درباره ما</a>
+    <a href="#contact">تماس با ما</a>
+    <a href="#order">سفارش</a>
+    <a href="#gallery">گالری</a>
+    <a href="#instagram">اینستاگرام</a>
+  </nav>
+
+  <section id="home">
+    <h2>به چرم مانی خوش آمدید</h2>
+    <p>برندی خاص برای خاص‌پسندان. طراحی دست‌دوز، کیفیت بی‌نظیر، و اصالت ایرانی.</p>
+  </section>
+
+  <section id="products">
+    <h2>محصولات ما</h2>
+    <div class="product fade-in">
+      <img src="https://via.placeholder.com/500x300?text=Leather+Bag" alt="کیف چرمی">
+      <h3>کیف چرمی دست‌دوز</h3>
+      <p>ساخته‌شده از چرم طبیعی با طراحی کلاسیک و مدرن.</p>
+      <button onclick="alert('برای سفارش تماس بگیرید')">سفارش</button>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>درباره چرم مانی</h2>
+    <p>ما از دل بازارهای سنتی ایران شروع کردیم و حالا با افتخار محصولاتمون رو به سراسر جهان می‌فرستیم. هر قطعه‌ای که می‌دوزیم، یه داستان داره.</p>
+  </section>
+
+  <section id="contact">
+    <h2>تماس با ما</h2>
+    <p>📞 0912-000-0000</p>
+    <p>📧 info@manileather.ir</p>
+    <p>📍 تهران، بازار بزرگ، پاساژ چرم</p>
+    <button onclick="window.location.href='https://wa.me/989120000000'">ارتباط در واتساپ</button>
+  </section>
+
+  <section id="order">
+    <h2>فرم سفارش</h2>
+    <form>
+      <label>نام:</label>
+      <input type="text" name="name" required>
+
+      <label>شماره تماس:</label>
+      <input type="tel" name="phone" required>
+
+      <label>نوع محصول:</label>
+      <select name="product">
+        <option>کیف چرمی</option>
+        <option>کمربند</option>
+        <option>ست هدیه</option>
+      </select>
+
+      <label>پیام شما:</label>
+      <textarea name="message" rows="4"></textarea>
+
+      <button type="submit" onclick="alert('سفارش شما ثبت شد!')">ارسال سفارش</button>
+    </form>
+  </section>
+
+  <section id="gallery">
+    <h2>گالری محصولات</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x200?text=Bag+1" alt="محصول ۱">
+      <img src="https://via.placeholder.com/300x200?text=Belt+2" alt="محصول ۲">
+      <img src="https://via.placeholder.com/300x200?text=Gift+Set" alt="محصول ۳">
+    </div>
+  </section>
+
+  <section id="instagram">
+    <h2>ما را در اینستاگرام دنبال کنید</h2>
+    <p>برای دیدن جدیدترین محصولات و پشت‌صحنه تولید، به صفحه اینستاگرام ما سر بزنید.</p>
+    <button onclick="window.open('https://instagram.com/manileather', '_blank')">ورود به اینستاگرام</button>
+  </section>
+
+  <footer>
+    © 2025 چرم مانی | طراحی توسط نادری
+  </footer>
+
+</body>
+</html>
